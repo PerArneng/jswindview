@@ -1,0 +1,15 @@
+JSWINDVIEW 0.1
+
+ABOUT
+
+  JSWindView is canvas implementation in javascript that shows how the wind
+  speed blows over a pice of land using a map or satelite photo.
+
+LICENSE
+
+  GPL 2.0
+
+COPYRIGHT
+
+  Copyright (c) 2010 by Per Arneng
+
