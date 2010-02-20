@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>JSWindView Demo</title>
+	<script type="text/javascript" src="../src/jswindview.js" ></script>
+	<script type="text/javascript">
+		var jsww;
+		function start() {
+			jsww = new JSWindView("windview_demo", 
+									  "fiskeback.jpg", "W");
+			jsww.start();
+		}
+	</script>
+</head>
+<body style="background: black;" onLoad="start();">
+
+
+<canvas id="windview_demo" width="500" height="500" 
+		style="background: lightgray;">
+		<img src="fiskeback.jpg" id="fiskeback.jpg" />
+</canvas>
+
+
+<form id="xx">
+
+<select  id="speed" onchange="jsww.setSpeed(this.value)" >
+  <option value="0.2">Slow</option>
+  <option value="0.5">Medium</option>
+  <option value="1.0">Fast</option>
+  <option value="3.0">Ultra Fast</option>
+</select>
+
+<select  id="compass" 
+	onchange="jsww.setDirection(this.value)" > 
+  <option value="N">N</option>
+  <option value="NNE">NNE</option>
+  <option value="NE">NE</option>
+  <option value="ENE">ENE</option>
+
+  <option value="E">E</option>
+  <option value="ESE">ESE</option>
+  <option value="SE">SE</option>
+  <option value="SSE">SSE</option>
+
+  <option value="S">S</option>
+  <option value="SSW">SSW</option>
+  <option value="SW">SW</option>
+  <option value="WSW">WSW</option>
+
+  <option value="W">W</option>
+  <option value="WNW">WNW</option>
+  <option value="NW">NW</option>
+  <option value="NNW">NNW</option>
+</select>
+</form>
+
+
+</body>
+</html>
